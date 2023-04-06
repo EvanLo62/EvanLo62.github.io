@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<div class="floating-block">
+    <img src="https://i-formosa.com/wp-content/uploads/2020/12/18121063_1479030995481462_2291512244468579819_o-1024x1024.jpg" alt="Image">
+    <div class="text">
+      <h2>富代雅緻－公司介紹</h2>
+      <p>此公司是羅家彥先生與林靖雅小姐在民國90年代時所開立的一家按摩SPA會館，
+        其營運目標是提供客人一個舒適的休息環境與完善的按摩服務，且除了按摩服務之外
+        ，還提供了KTV包廂服務，讓你能夠在按摩完身體後，可以盡情抒發積累已久的情緒，
+        這麼優質又完美的SPA按摩會館，你還不來嗎? 趕快邀約身邊的朋友，一起來會館裡，
+        與漂亮的總經理聊天，跟享受高品質的按摩服務吧!!
+      </p>
+    </div>
+  </div>
+
+<style>
+
+html, body {
+  background-image: url("https://static.104.com.tw/b_profile/cust_picture/6550/130000000146550/env/l_962627717425043405.jpg?v=20220617234154");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.floating-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 25%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  height: 40%;
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 50);
+  animation: float 3s ease-in-out infinite;
+}
+
+.floating-block img {
+  width: 35%;
+  margin-right: 100px;
+  
+}
+
+.floating-block .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 0px;
+  margin-left: 0%;
+  font-family: "Microsoft JhengHei", sans-serif;
+}
+
+.floating-block h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-top: 0%;
+  text-align: center;
+  
+}
+
+.floating-block p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-5px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+</style>
